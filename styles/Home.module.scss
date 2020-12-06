@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -68,7 +70,7 @@
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -119,4 +121,59 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+.has-same-height .card {
+  height: 320px;
+  overflow: hidden;
+}
+
+.card-content h3 {
+  text-align: center;
+}
+
+// TODO Fix selector
+//.table-profile td,
+//th {
+//  border: none !important;
+//}
+
+.table-profile td:first-of-type {
+  font-weight: bold;
+}
+
+.skills-content .media {
+  margin: 0 !important;
+  padding: 4px !important;
+  border: 0 !important;
+}
+
+.skills-content .progress {
+  height: 4px !important;
+}
+
+.custom-tags {
+  text-align: center !important;
+  display: block;
+}
+
+.portfolio-container .card {
+  margin-bottom: 2em;
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 6em;
+}
+
+.hero.is-origin-color {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar.is-origin-color {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
 }
