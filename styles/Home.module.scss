@@ -134,10 +134,13 @@
 }
 
 // TODO Fix selector
-//.table-profile td,
-//th {
-//  border: none !important;
-//}
+.table-profile td {
+  border: none !important;
+}
+
+.table-profile th {
+  border: none !important;
+}
 
 .table-profile td:first-of-type {
   font-weight: bold;

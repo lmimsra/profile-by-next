@@ -10,8 +10,11 @@
   text-align: center;
 }
 
-.table-profile td,
-th {
+.table-profile td {
+  border: none !important;
+}
+
+.table-profile th {
   border: none !important;
 }
 
