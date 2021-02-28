@@ -1,7 +1,7 @@
 function Header() {
   return (
     <div>
-      <nav className="navbar is-link is-fixed-top">
+      <nav className="navbar is-origin-color is-fixed-top">
         <div className="navbar-brand">
           <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
             <span></span>
