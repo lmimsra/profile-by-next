@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SkillBar from '../components/skillBar'
-import skillBar from '../components/skillBar'
+import Resume from '../components/resume'
 
 export default function Home() {
   return (
@@ -121,75 +121,36 @@ export default function Home() {
         {/* skill tags*/}
         <div className="tags custom-tags">
           {
-            getSkillTags().map((val)=>
+            getSkillTags().map((val) =>
               <span className="tag is-light">{val}</span>
             )
           }
         </div>
 
-        <section className="section" id="services">
-          <div className="section-heading">
-            <h3 className="title is-2">Services</h3>
-            <h4 className="subtitle is-5">What can I do for you?</h4>
+        {/* resume */}
+        <section className="section" id="resume">
+          <div className="section-heading section-text">
+            <h3 className="title is-2">Resume</h3>
+            <h4 className="subtitle is-5">実績・経験</h4>
           </div>
           <div className="container">
-            <div className="columns">
-              <div className="column">
-                <div className="box">
-                  <div className="content">
-                    <h4 className="title is-5">Front End Web Development</h4>
-                    Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript
-                    and
-                    Vue.js.
-                  </div>
-                </div>
-              </div>
-              <div className="column">
-                <div className="box">
-                  <div className="content">
-                    <h4 className="title is-5">Back End Web Development</h4>
-                    Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="columns">
-              <div className="column">
-                <div className="box">
-                  <div className="content">
-                    <h4 className="title is-5">Front End Web Development</h4>
-                    Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript
-                    and
-                    Vue.js.
-                  </div>
-                </div>
-              </div>
-              <div className="column">
-                <div className="box">
-                  <div className="content">
-                    <h4 className="title is-5">Back End Web Development</h4>
-                    Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-                  </div>
-                </div>
-              </div>
+            <div className="columns is-multiline">
+              {
+                getResumeData().map((val) =>
+                  <Resume
+                    title={val.title}
+                    about={val.about}
+                    technology={val.technology}
+                    role={val.role}
+                    performance={val.performance}
+                    members={val.members}
+                  />)
+              }
             </div>
           </div>
         </section>
 
-        <section className="section" id="resume">
-          <div className="section-heading">
-            <h3 className="title is-2">Resume</h3>
-            <h4 className="subtitle is-5">More about my past</h4>
-            <a href="#" className="button is-link is-medium">
-        <span className="icon">
-          <i className="fas fa-file-alt"></i>
-        </span>
-              <span>Download My Resume</span>
-            </a>
-          </div>
-        </section>
-
+        {/* portfolio */}
         <section className="section" id="portfolio">
           <div className="container">
             <div className="section-heading">
