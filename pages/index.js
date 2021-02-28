@@ -46,43 +46,43 @@ export default function Home() {
           </div>
 
           <div className="columns has-same-height is-gapless">
-            div class="column">
-            <!-- Profile -->
-            <div class="card">
-              <div class="card-content">
-                <h3 class="title is-4">Profile</h3>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4">Profile</h3>
 
-                <div class="content">
-                  <table class="table-profile">
-                    <tr>
-                      <th colspan="1"></th>
-                      <th colspan="2"></th>
-                    </tr>
-                    <tr>
-                      <td>Address:</td>
-                      <td>Tokyo, Kanagawa</td>
-                    </tr>
-                    <tr>
-                      <td>Phone:</td>
-                      <td>secret!!</td>
-                    </tr>
-                    <tr>
-                      <td>Email:</td>
-                      <td>lmimsra07@gmail.com</td>
-                    </tr>
-                  </table>
-                </div>
-                <br />
-                <div class="buttons has-addons is-centered">
-                  <a href="https://github.com/lmimsra" class="button is-link">
-                    Github
-                  </a>
-                  <a
-                    href="https://twitter.com/lmimsra_dev"
-                    class="button is-link"
-                  >
-                    Twitter
-                  </a>
+                  <div class="content">
+                    <table class="table-profile">
+                      <tr>
+                        <th colspan="1"></th>
+                        <th colspan="2"></th>
+                      </tr>
+                      <tr>
+                        <td>Address:</td>
+                        <td>Tokyo, Kanagawa</td>
+                      </tr>
+                      <tr>
+                        <td>Phone:</td>
+                        <td>secret!!</td>
+                      </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td>lmimsra07@gmail.com</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <br/>
+                  <div class="buttons has-addons is-centered">
+                    <a href="https://github.com/lmimsra" class="button is-link">
+                      Github
+                    </a>
+                    <a
+                      href="https://twitter.com/lmimsra_dev"
+                      class="button is-link"
+                    >
+                      Twitter
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
