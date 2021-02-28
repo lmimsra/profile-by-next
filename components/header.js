@@ -18,12 +18,6 @@ function Header() {
           </span>
               <span>About</span>
             </a>
-            <a className="navbar-item" href="#services">
-          <span className="icon">
-            <i className="fas fa-bars"></i>
-          </span>
-              <span>Services</span>
-            </a>
             <a className="navbar-item" href="#resume">
           <span className="icon">
             <i className="fas fa-file-alt"></i>
