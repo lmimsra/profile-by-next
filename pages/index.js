@@ -32,60 +32,57 @@ export default function Home() {
         <section className="section" id="about">
           <div className="section-heading">
             <h3 className="title is-2">About Me</h3>
-            <h4 className="subtitle is-5">Jack of all trades, master of "some"</h4>
+            <h4 className="subtitle is-5">私について、概要</h4>
             <div className="container">
-              <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
-                field of
-                <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love
-                for <strong>Coffee</strong>.
-                Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-                believes
-                in gaining a competitive edge and giving back to the community.</p>
+              <p>
+                API開発を主としたバックエンドエンジニアをしています。<br/>
+                MAU300万を超えるスマホアプリや、スマホでの注文を行うSPAのバックエンド開発をしてきました。
+                業務経験のある言語はPHP(Laravel)、vue.jsはコードレビュー程度。AWS上での開発をしました。<br/>
+                個人的にflutter, go, vue.jsの勉強をしています。
+                このサイトもvue.jsとCSSとしてbulmaで作っています。<br/>
+                バックエンドエンジニアから、次のステージとしてアーキテクトを目指してバックエンドに限らず様々な知識を集めています。
+              </p>
             </div>
           </div>
 
           <div className="columns has-same-height is-gapless">
-            <div className="column">
-              <div className="card">
-                <div className="card-content">
-                  <h3 className="title is-4">Profile</h3>
+            div class="column">
+            <!-- Profile -->
+            <div class="card">
+              <div class="card-content">
+                <h3 class="title is-4">Profile</h3>
 
-                  <div className="content">
-                    <table className="table-profile">
-                      <tr>
-                        <th colSpan="1"></th>
-                        <th colSpan="2"></th>
-                      </tr>
-                      <tr>
-                        <td>Address:</td>
-                        <td>Guru's Lab</td>
-                      </tr>
-                      <tr>
-                        <td>Phone:</td>
-                        <td>0123-456789</td>
-                      </tr>
-                      <tr>
-                        <td>Email:</td>
-                        <td>minion@despicable.me</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <br/>
-                  <div className="buttons has-addons is-centered">
-                    <a href="#" className="button is-link">Github</a>
-                    <a href="#" className="button is-link">LinkedIn</a>
-                    <a href="#" className="button is-link">Twitter</a>
-                    <a href="#" className="button is-link">CodeTrace</a>
-                  </div>
+                <div class="content">
+                  <table class="table-profile">
+                    <tr>
+                      <th colspan="1"></th>
+                      <th colspan="2"></th>
+                    </tr>
+                    <tr>
+                      <td>Address:</td>
+                      <td>Tokyo, Kanagawa</td>
+                    </tr>
+                    <tr>
+                      <td>Phone:</td>
+                      <td>secret!!</td>
+                    </tr>
+                    <tr>
+                      <td>Email:</td>
+                      <td>lmimsra07@gmail.com</td>
+                    </tr>
+                  </table>
                 </div>
-              </div>
-            </div>
-            <div className="column">
-              <div className="card">
-                <div className="card-image">
-                  <figure className="image is-4by3">
-                    <img src="https://source.unsplash.com/random/1280x960" alt="Placeholder image"/>
-                  </figure>
+                <br />
+                <div class="buttons has-addons is-centered">
+                  <a href="https://github.com/lmimsra" class="button is-link">
+                    Github
+                  </a>
+                  <a
+                    href="https://twitter.com/lmimsra_dev"
+                    class="button is-link"
+                  >
+                    Twitter
+                  </a>
                 </div>
               </div>
             </div>
