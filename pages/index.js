@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import SkillBar from '../components/skillBar'
+import skillBar from '../components/skillBar'
 
 export default function Home() {
   return (
@@ -10,7 +12,6 @@ export default function Home() {
         <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-
 
       <div>
         {/*header*/}
@@ -105,66 +106,11 @@ export default function Home() {
                 <div className="card-content skills-content">
                   <h3 className="title is-4">Skills</h3>
                   <div className="content">
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>JavaScript:</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="90" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>Vue.js:</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="90" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>Node.js:</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="75" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>HTML5/CSS3</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="95" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>Databases</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="66" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
+                    {
+                      getSkillPoints().map((val) =>
+                        <SkillBar name={val.name} point={val.point}/>
+                      )
+                    }
                   </div>
                 </div>
               </div>
@@ -688,4 +634,17 @@ export default function Home() {
       </div>
     </div>
   )
+}
+
+// スキルの値取得
+function getSkillPoints() {
+  return [
+    // max100にすると計算しやすい
+    {name: 'PHP(Laravel)', point: 75},
+    {name: 'JavaScript(vue.js)', point: 30},
+    {name: 'HTML5/CSS3', point: 30},
+    {name: 'Dart(Flutter)', point: 10},
+    {name: 'Go', point: 10},
+    {name: 'Database(MySQL)', point: 45}
+  ]
 }
