@@ -1,30 +1,45 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import SkillBar from '../components/skillBar'
+import skillBar from '../components/skillBar'
 
 export default function Home() {
   return (
     <div>
       <Head>
         {/* ここはhead内に追記されるやつ */}
-        <title>Create Next App</title>
+        <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-
 
       <div>
         {/*header*/}
         <Header/>
 
-        <section className="hero is-link is-fullheight is-fullheight-with-navbar">
+        <section className="hero is-origin-color is-fullheight is-fullheight-with-navbar">
           <div className="hero-body">
-            <div className="container">Hello! I am
-              <h1 className="title is-1">
-                Minion Tim
-              </h1>
-              <h2 className="subtitle is-3">
-                Full Stack Web Developer
-              </h2>
+            <div className="container">
+              <div className="columns">
+                <div className="column is-one-fifth-tablet">
+                  <figure className="image is-128x128 icon-spacer">
+                    <img
+                      alt="プロフィール写真"
+                      className="is-rounded"
+                      src="/img/myIcon.jpg"
+                    />
+                  </figure>
+                </div>
+                <div className="column is-four-fifths-tablet has-text-centered-mobile">
+                  Hello! I am
+                  <h1 className="title is-1">
+                    Lima.json
+                  </h1>
+                  <h2 className="subtitle is-3">
+                    Backend Engineer <br/>(API Developer)
+                  </h2>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -32,60 +47,57 @@ export default function Home() {
         <section className="section" id="about">
           <div className="section-heading">
             <h3 className="title is-2">About Me</h3>
-            <h4 className="subtitle is-5">Jack of all trades, master of "some"</h4>
+            <h4 className="subtitle is-5">私について、概要</h4>
             <div className="container">
-              <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
-                field of
-                <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love
-                for <strong>Coffee</strong>.
-                Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-                believes
-                in gaining a competitive edge and giving back to the community.</p>
+              <p>
+                API開発を主としたバックエンドエンジニアをしています。<br/>
+                MAU300万を超えるスマホアプリや、スマホでの注文を行うSPAのバックエンド開発をしてきました。
+                業務経験のある言語はPHP(Laravel)、vue.jsはコードレビュー程度。AWS上での開発をしました。<br/>
+                個人的にflutter, go, vue.jsの勉強をしています。
+                このサイトもvue.jsとCSSとしてbulmaで作っています。<br/>
+                バックエンドエンジニアから、次のステージとしてアーキテクトを目指してバックエンドに限らず様々な知識を集めています。
+              </p>
             </div>
           </div>
 
           <div className="columns has-same-height is-gapless">
-            <div className="column">
-              <div className="card">
-                <div className="card-content">
-                  <h3 className="title is-4">Profile</h3>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="title is-4">Profile</h3>
 
-                  <div className="content">
-                    <table className="table-profile">
+                  <div class="content">
+                    <table class="table-profile">
                       <tr>
-                        <th colSpan="1"></th>
-                        <th colSpan="2"></th>
+                        <th colspan="1"></th>
+                        <th colspan="2"></th>
                       </tr>
                       <tr>
                         <td>Address:</td>
-                        <td>Guru's Lab</td>
+                        <td>Tokyo, Kanagawa</td>
                       </tr>
                       <tr>
                         <td>Phone:</td>
-                        <td>0123-456789</td>
+                        <td>secret!!</td>
                       </tr>
                       <tr>
                         <td>Email:</td>
-                        <td>minion@despicable.me</td>
+                        <td>lmimsra07@gmail.com</td>
                       </tr>
                     </table>
                   </div>
                   <br/>
-                  <div className="buttons has-addons is-centered">
-                    <a href="#" className="button is-link">Github</a>
-                    <a href="#" className="button is-link">LinkedIn</a>
-                    <a href="#" className="button is-link">Twitter</a>
-                    <a href="#" className="button is-link">CodeTrace</a>
+                  <div class="buttons has-addons is-centered">
+                    <a href="https://github.com/lmimsra" class="button is-link">
+                      Github
+                    </a>
+                    <a
+                      href="https://twitter.com/lmimsra_dev"
+                      class="button is-link"
+                    >
+                      Twitter
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="column">
-              <div className="card">
-                <div className="card-image">
-                  <figure className="image is-4by3">
-                    <img src="https://source.unsplash.com/random/1280x960" alt="Placeholder image"/>
-                  </figure>
                 </div>
               </div>
             </div>
@@ -94,66 +106,11 @@ export default function Home() {
                 <div className="card-content skills-content">
                   <h3 className="title is-4">Skills</h3>
                   <div className="content">
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>JavaScript:</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="90" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>Vue.js:</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="90" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>Node.js:</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="75" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>HTML5/CSS3</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="95" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="media">
-                      <div className="media-content">
-                        <div className="content">
-                          <p>
-                            <strong>Databases</strong>
-                            <br/>
-                            <progress className="progress is-primary" value="66" max="100"></progress>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
+                    {
+                      getSkillPoints().map((val) =>
+                        <SkillBar name={val.name} point={val.point}/>
+                      )
+                    }
                   </div>
                 </div>
               </div>
@@ -677,4 +634,17 @@ export default function Home() {
       </div>
     </div>
   )
+}
+
+// スキルの値取得
+function getSkillPoints() {
+  return [
+    // max100にすると計算しやすい
+    {name: 'PHP(Laravel)', point: 75},
+    {name: 'JavaScript(vue.js)', point: 30},
+    {name: 'HTML5/CSS3', point: 30},
+    {name: 'Dart(Flutter)', point: 10},
+    {name: 'Go', point: 10},
+    {name: 'Database(MySQL)', point: 45}
+  ]
 }
