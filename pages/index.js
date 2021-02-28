@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         {/* ここはhead内に追記されるやつ */}
-        <title>Create Next App</title>
+        <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
 
@@ -16,15 +16,29 @@ export default function Home() {
         {/*header*/}
         <Header/>
 
-        <section className="hero is-link is-fullheight is-fullheight-with-navbar">
+        <section className="hero is-origin-color is-fullheight is-fullheight-with-navbar">
           <div className="hero-body">
-            <div className="container">Hello! I am
-              <h1 className="title is-1">
-                Minion Tim
-              </h1>
-              <h2 className="subtitle is-3">
-                Full Stack Web Developer
-              </h2>
+            <div className="container">
+              <div className="columns">
+                <div className="column is-one-fifth-tablet">
+                  <figure className="image is-128x128 icon-spacer">
+                    <img
+                      alt="プロフィール写真"
+                      className="is-rounded"
+                      src="/img/myIcon.jpg"
+                    />
+                  </figure>
+                </div>
+                <div className="column is-four-fifths-tablet has-text-centered-mobile">
+                  Hello! I am
+                  <h1 className="title is-1">
+                    Lima.json
+                  </h1>
+                  <h2 className="subtitle is-3">
+                    Backend Engineer <br/>(API Developer)
+                  </h2>
+                </div>
+              </div>
             </div>
           </div>
         </section>
