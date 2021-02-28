@@ -55,9 +55,4 @@ function getPreviewLink(previewLink) {
   return previewLink === null ? '#' : previewLink
 }
 
-function isNullTargetLink() {
-  return this.$props.previewLink === null
-
-}
-
 export default PortfolioCard
